@@ -5,9 +5,7 @@ module.exports = function() {
   let theVault = {};
 
   function setValue(key, value) {
-    theVault[key] = value;
-    return theVault;
-  }
+    theVault[key] = value;  }
 
   function getValue(key) {
     if(theVault[key]){
