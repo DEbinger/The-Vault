@@ -1,6 +1,7 @@
 'use strict';
 
-module.exports = function() {
+'use strict'
+module.exports = function () {
 
   let theVault = {};
 
@@ -8,7 +9,7 @@ module.exports = function() {
     theVault[key] = value;  }
 
   function getValue(key) {
-    if(theVault[key]){
+    if(theVault.hasOwnProperty(key)){
 
       return theVault[key];
     
